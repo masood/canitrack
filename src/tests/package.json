@@ -1,0 +1,24 @@
+{
+  "name": "canitrack",
+  "version": "1.0.0",
+  "description": "Tool to analyze browser mechanisms for potential tracking use.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Mir Masood Ali",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "md5": "^2.3.0",
+    "proper-lockfile": "^4.1.2",
+    "util": "^0.12.4"
+  },
+  "type": "module"
+}

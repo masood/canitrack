@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            window.userId = "##userId##";
+            window.test = "##test##";
+            window.browserName = "##browserName##";
+            window.subtestName = "##subtestName##";
+            window.method = "##method##";
+
+            var redirectionDomainListAcceptCH = ['trust-token.paperscut.com:3001', 'trust-token.paperscut.com:3002', 'trust-token.paperscut.com:3003', 'trust-token.paperscut.com:3004', 'trust-token.paperscut.com:3005']
+
+            let currentDomainIndex = redirectionDomainListAcceptCH.indexOf(location.host);
+            
+            if (!((parseInt(currentDomainIndex)) >= (redirectionDomainListAcceptCH.length - 1))) {
+                window.location = `https://${redirectionDomainListAcceptCH[currentDomainIndex+1]}${window.location.pathname}${window.location.search}`
+            } else {
+                top.postMessage("secret computed", "*");
+            }
+        </script>
+    </head> 
+</html>

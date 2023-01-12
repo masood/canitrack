@@ -1,0 +1,688 @@
+{
+    "domains": {
+        "sites": ["example.com", "example1.com", "example2.com", "example3.com","example4.com","example5.com","example6.com","example7.com","example8.com","example9.com","example10.com","example11.com","example12.com","example13.com","example14.com","example15.com","example17.com","example18.com","example19.com","example20.com","example21.com","example22.com","example23.com","example24.com","example25.com","example26.com","example27.com","example28.com","example29.com","example30.com","example31.com"],
+        "subdomains": ["1.example.com", "2.example.com", "3.example.com", "4.example.com", "5.example.com", "6.example.com", "7.example.com", "8.example.com", "9.example.com", "10.example.com", "11.example.com", "12.example.com", "13.example.com", "14.example.com", "15.example.com", "16.example.com", "17.example.com", "18.example.com", "19.example.com", "20.example.com", "21.example.com", "22.example.com", "23.example.com", "24.example.com", "25.example.com", "26.example.com", "27.example.com", "28.example.com", "29.example.com", "30.example.com", "31.example.com", "32.example.com"],
+        "ports": ["example.com:3001", "example.com:3002", "example.com:3003", "example.com:3004", "example.com:3005", "example.com:3006", "example.com:3007", "example.com:3008", "example.com:3009", "example.com:3010", "example.com:3011", "example.com:3012", "example.com:3013", "example.com:3014", "example.com:3015", "example.com:3016", "example.com:3017", "example.com:3018", "example.com:3019", "example.com:3020", "example.com:3021", "example.com:3022", "example.com:3023", "example.com:3024", "example.com:3025", "example.com:3026", "example.com:3027", "example.com:3028", "example.com:3029", "example.com:3030", "example.com:3031", "example.com:3032"]
+    },
+    "browsers": {
+        "firefox-105-mac" : {
+            "browserName" : "Firefox",
+            "browserVersion" : "105"
+        }
+    },
+    "storageModules": {
+        "cookie": {
+            "bitsPerVisit": 32,
+            "delayBetweenVisits": 5,
+            "needsDomains": false,
+            "numAccessesBased": false,
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        },
+        "localStorage": {
+            "bitsPerVisit": 32,
+            "delayBetweenVisits": 5,
+            "needsDomains": false,
+            "numAccessesBased": false,
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        },
+        "indexedDB": {
+            "bitsPerVisit": 32,
+            "delayBetweenVisits": 5,
+            "needsDomains": false,
+            "numAccessesBased": false,
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        },
+        "webSQL": {
+            "bitsPerVisit": 32,
+            "delayBetweenVisits": 5,
+            "needsDomains": false,
+            "numAccessesBased": false,
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        },
+        "cacheStorage": {
+            "bitsPerVisit": 32,
+            "delayBetweenVisits": 10,
+            "needsDomains": false,
+            "numAccessesBased": false,
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        },
+        "stylesheetCache": {
+            "bitsPerVisit": 32,
+            "delayBetweenVisits": 30,
+            "needsDomains": true,
+            "numAccessesBased": true,
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        },
+        "httpCache": {
+            "bitsPerVisit": 32,
+            "delayBetweenVisits": 30,
+            "needsDomains": true,
+            "numAccessesBased": true,
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        },        
+        "fontCache": {
+            "bitsPerVisit": 32,
+            "delayBetweenVisits": 30,
+            "needsDomains": true,
+            "numAccessesBased": true,
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        },
+        "imageCache": {
+            "bitsPerVisit": 32,
+            "delayBetweenVisits": 30,
+            "needsDomains": true,
+            "numAccessesBased": true,
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        },
+        "faviconCache": {
+            "bitsPerVisit": 1,
+            "delayBetweenVisits": 30,
+            "needsDomains": false,
+            "numAccessesBased": true,
+            "testsToPerform": [
+                "storageIsolation",
+                "redirections"
+            ]
+        },
+        "fileStorage": {
+            "bitsPerVisit": 32,
+            "needsDomains": false,
+            "numAccessesBased": false,
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        },
+        "altsvc": {
+            "bitsPerVisit": 32,
+            "delayBetweenVisits": 30,
+            "needsDomains": true,
+            "numAccessesBased": true,
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        },
+        "httpAuth": {
+            "bitsPerVisit": 32,
+            "delayBetweenVisits": 30,
+            "needsDomains": true,
+            "numAccessesBased": false,
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        },
+        "nel": {
+            "bitsPerVisit": 32,
+            "delayBetweenVisits": 20,
+            "needsDomains": false,
+            "numAccessesBased": true,
+            "askModuleForHeaders": true, 
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        },
+        "serviceWorker": {
+            "bitsPerVisit": 32,
+            "delayBetweenVisits": 10,
+            "needsDomains": false,
+            "numAccessesBased": false,
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        },
+        "serviceWorkerCache": {
+            "bitsPerVisit": 32,
+            "delayBetweenVisits": 10,
+            "needsDomains": false,
+            "numAccessesBased": true,
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        },
+        "cors": {
+            "bitsPerVisit": 2,
+            "delayBetweenVisits": 30,
+            "needsDomains": true,
+            "numAccessesBased": true,
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        },
+        "hsts": {
+            "bitsPerVisit": 32,
+            "delayBetweenVisits": 30,
+            "needsDomains": true,
+            "numAccessesBased": true,
+            "testsToPerform": [
+                "storageIsolation"
+            ]
+        }
+    },
+    "testModules": {
+        "storageIsolation": {
+            "site-1P": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null
+                }
+            },
+            "privacyTestsOrg-1P": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    }
+                }
+            },
+            "privacyTestsOrg-3P": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 1
+                    },
+                    "iFrame": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    }
+                }
+            },
+            "numKeys-keyed": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 1
+                    },
+                    "iFrame": null
+                }
+            },
+            "numKeys-frameKeyed": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": {
+                        "domainLevel": "site",
+                        "domainIndex": 1
+                    }
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": {
+                        "domainLevel": "site",
+                        "domainIndex": 2
+                    }
+                }
+            },
+            "numKeys-doubleKeyed": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 1
+                    },
+                    "iFrame": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    }
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 2
+                    },
+                    "iFrame": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    }
+                }
+            },
+            "keyLevel-TLCheck": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "subdomain",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "subdomain",
+                        "domainIndex": 1
+                    },
+                    "iFrame": null
+                }
+            },
+            "keyLevel-frameCheck": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": {
+                        "domainLevel": "subdomain",
+                        "domainIndex": 1
+                    }
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": {
+                        "domainLevel": "subdomain",
+                        "domainIndex": 2
+                    }
+                }
+            },
+            "keyLevel-doubleKeyCheck": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "subdomain",
+                        "domainIndex": 1
+                    },
+                    "iFrame": {
+                        "domainLevel": "subdomain",
+                        "domainIndex": 0
+                    }
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "subdomain",
+                        "domainIndex": 2
+                    },
+                    "iFrame": {
+                        "domainLevel": "subdomain",
+                        "domainIndex": 0
+                    }
+                }
+            },
+            "portCheck-TLCheck": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "port",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "port",
+                        "domainIndex": 1
+                    },
+                    "iFrame": null
+                }
+            },
+            "portCheck-frameCheck": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 1
+                    },
+                    "iFrame": {
+                        "domainLevel": "port",
+                        "domainIndex": 0
+                    }
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 1
+                    },
+                    "iFrame": {
+                        "domainLevel": "port",
+                        "domainIndex": 1
+                    }
+                }
+            },
+            "portCheck-doubleKeyCheck": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "port",
+                        "domainIndex": 1
+                    },
+                    "iFrame": {
+                        "domainLevel": "port",
+                        "domainIndex": 0
+                    }
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "port",
+                        "domainIndex": 2
+                    },
+                    "iFrame": {
+                        "domainLevel": "port",
+                        "domainIndex": 0
+                    }
+                }
+            },
+            "site-1P-toPrivate": {
+                "toPrivate": true,
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null
+                }
+            },
+            "site-1P-fromPrivate": {
+                "fromPrivate": true,
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null
+                }
+            },
+            "site-1P-withinPrivate": {
+                "toPrivate": true,
+                "fromPrivate": true,
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null
+                }
+            },
+            "site-1P-clearBrowserData": {
+                "clearBrowserData": true,
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null
+                }
+            }
+        },
+        "redirections": {
+            "site-TopLevel": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null,
+                    "redirectionLevel": "site",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null,
+                    "redirectionLevel": "site",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                }
+            },
+            "subdomain-TopLevel": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "subdomain",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null,
+                    "redirectionLevel": "subdomain",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "subdomain",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null,
+                    "redirectionLevel": "subdomain",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                }
+            },
+            "port-TopLevel": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "port",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null,
+                    "redirectionLevel": "port",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "port",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null,
+                    "redirectionLevel": "port",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                }
+            },
+            "site-iFrame": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "redirectionLevel": "site",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "redirectionLevel": "site",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                }
+            },
+            "subdomain-iFrame": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": {
+                        "domainLevel": "subdomain",
+                        "domainIndex": 0
+                    },
+                    "redirectionLevel": "subdomain",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": {
+                        "domainLevel": "subdomain",
+                        "domainIndex": 0
+                    },
+                    "redirectionLevel": "subdomain",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                }
+            },
+            "port-iFrame": {
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": {
+                        "domainLevel": "port",
+                        "domainIndex": 0
+                    },
+                    "redirectionLevel": "port",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": {
+                        "domainLevel": "port",
+                        "domainIndex": 0
+                    },
+                    "redirectionLevel": "port",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                }
+            },
+            "site-TopLevel-toPrivate": {
+                "toPrivate": true,
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null,
+                    "redirectionLevel": "site",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null,
+                    "redirectionLevel": "site",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                }
+            },
+            "site-TopLevel-fromPrivate": {
+                "fromPrivate": true,
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null,
+                    "redirectionLevel": "site",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null,
+                    "redirectionLevel": "site",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                }
+            },
+            "site-TopLevel-clearBrowserData": {
+                "clearBrowserData": true,
+                "write": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null,
+                    "redirectionLevel": "site",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                },
+                "read": {
+                    "topLevel": {
+                        "domainLevel": "site",
+                        "domainIndex": 0
+                    },
+                    "iFrame": null,
+                    "redirectionLevel": "site",
+                    "redirectionIndices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                }
+            }
+        }
+    }
+}

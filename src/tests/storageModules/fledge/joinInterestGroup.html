@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Join Interest Group DEMO</title>
+
+<meta http-equiv="origin-trial" content="">
+
+<script>
+let interestGroup = {
+    name: `bit1`,
+    owner: `https://${window.location.hostname}`,
+
+    // x-allow-fledge: true
+    biddingLogicUrl: `https://${window.location.hostname}/storage/server/fledge/bidding_logic.js`,
+
+    // x-allow-fledge: true
+    trustedBiddingSignalsUrl: `https://${window.location.hostname}/storage/server/fledge/bidding_signal.json`,
+    trustedBiddingSignalsKeys: ["key1", "key2"],
+
+    dailyUpdateUrl: `https://${window.location.hostname}/storage/server/fledge/daily_update_url`, // not implemented yets
+    userBiddingSignals: { user_bidding_signals: "user_bidding_signals" },
+    ads: [{
+        renderUrl: `https://${window.location.hostname}/storage/server/fledge/shopping-ad.html`,
+        metadata: {
+            type: `shopping`
+        }
+    }]
+}
+console.log(interestGroup)
+document.addEventListener("DOMContentLoaded", async(e) => {
+    console.log(e)
+    let kSecsPerDay = 3600 * 24 * 30
+    console.log(await navigator.joinAdInterestGroup(interestGroup, kSecsPerDay))
+})
+</script>
