@@ -24,7 +24,7 @@ If you use CanITrack in your research, please cite our NDSS 2023 publication on 
         isbn = {1-891562-83-5},
         doi = {https://dx.doi.org/10.14722/ndss.2023.24072},
         year = {2023},
-        pages = {1--17},
+        pages = {1--18},
     }
 
 License
